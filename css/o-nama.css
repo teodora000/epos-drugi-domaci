@@ -1,0 +1,136 @@
+.owl-carousel {
+  display: block;
+  margin: 0 auto;
+  height: 500px;
+  width: 60vw;
+}
+
+.owl-carousel div {
+  height: 100%;
+}
+
+.owl-carousel img {
+  height: 100%;
+}
+
+.sekcija1 {
+  display: block;
+  width: 80vw;
+  margin: 0 auto;
+
+  display: flex;
+}
+
+.sekcija1 .levo {
+  width: 100%;
+}
+
+.sekcija1 .levo h1 {
+  margin-bottom: 30px;
+  border-bottom: 2px solid var(--color-4);
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.sekcija1 .levo p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.sekcija1 .desno {
+  width: 100%;
+}
+
+.sekcija1 .desno img {
+  width: 100%;
+}
+
+.sekcija2 {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.sekcija2 h1 {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.sekcija2 .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+.sekcija2 .kartica {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 3px #005c5a;
+  /* box-shadow: 0 5px 5px #461111; */
+}
+
+.kartica .slika {
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.kartica .slika img {
+  height: 100%;
+}
+
+.kartica p {
+  font-size: 20px;
+}
+
+.sekcija2 .button {
+  margin: 100px auto;
+}
+
+.separator {
+  margin: 40px 0;
+}
+
+h3 {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .owl-carousel {
+    width: 100%;
+  }
+
+  .sekcija1 {
+    flex-direction: column-reverse;
+  }
+
+  .sekcija1 .levo h1 {
+    width: fit-content;
+    padding: 10px 30px;
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .sekcija1 .levo p {
+    width: 100%;
+  }
+
+  .sekcija2 {
+    height: auto;
+  }
+
+  .sekcija2 .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .sekcija2 .button {
+    margin: 40px auto;
+    margin-bottom: 100px;
+  }
+}

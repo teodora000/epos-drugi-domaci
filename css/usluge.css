@@ -1,0 +1,87 @@
+.naslov {
+  width: fit-content;
+  margin: 30px auto;
+}
+
+.usluge {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.usluga {
+  width: 50vw;
+  background-color: var(--color-3);
+  border-radius: 10px;
+  box-shadow: 5px 5px 7px #005c5a;
+  padding: 20px 25px;
+  margin: 30px;
+  display: flex;
+}
+
+.usluga .levo,
+.usluga .desno {
+  width: 100%;
+}
+
+.usluga .ime-usluge {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.usluga .opis div {
+  margin: 3px 0;
+}
+
+.usluga .desno {
+  border-left: 1px solid black;
+  padding-left: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.usluga form .text {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.usluga form input {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usluga form input[type="radio"] {
+  width: fit-content;
+  display: inline;
+}
+
+.button {
+  margin: 0 auto;
+  background-color: var(--color-1);
+}
+
+@media only screen and (max-width: 1100px) {
+  .usluga {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .usluga .levo {
+    padding-bottom: 20px;
+  }
+
+  .usluga .desno {
+    border-left: none;
+    border-top: 1px solid black;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}

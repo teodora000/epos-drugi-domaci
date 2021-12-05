@@ -1,0 +1,136 @@
+:root {
+  /* https://colorhunt.co/palette/00a19dfff8e5ffb344e05d5d */
+  --color-1: #00a19d;
+  --color-2: #fff8e5;
+  --color-3: #ffb344;
+  --color-4: #eb3737;
+  /* --color-4: #e05d5d; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+input {
+  display: block;
+  padding: 5px;
+  outline: none;
+  border: 1px solid black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: var(--color-1);
+}
+
+nav .logo-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 80%;
+}
+
+.burger {
+  display: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-links .iks {
+  display: none;
+}
+
+.separator {
+  margin: 10px 0;
+  height: 5px;
+  background-color: var(--color-1);
+}
+
+.nav-links a {
+  color: white;
+}
+
+.button {
+  font-weight: 600;
+  background-color: var(--color-4);
+  color: white;
+  letter-spacing: 2px;
+  width: fit-content;
+  padding: 10px 13px;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.03);
+}
+
+@media only screen and (max-width: 1100px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--color-1);
+    z-index: 1000;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+  }
+
+  .nav-links .iks {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 20px;
+  }
+
+  nav {
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+}
+
+/* Na kraju */
+.hidden {
+  display: none;
+}

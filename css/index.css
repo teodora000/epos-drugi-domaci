@@ -1,0 +1,96 @@
+.landing-sekcija {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  height: 92vh;
+  background-image: url("../img/landing.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-sekcija h1 {
+  font-size: 80px;
+  color: var(--color-4);
+  border: 10px solid var(--color-4);
+  padding: 20px;
+  margin-left: 10vw;
+
+  text-shadow: 2px 2px black;
+  box-shadow: 2px 2px 10px black;
+}
+
+.sekcija2 {
+  height: 100vh;
+  display: flex;
+}
+
+.sekcija2 .levo {
+  width: 100%;
+  background-image: url("../img/landing-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.sekcija2 .desno {
+  width: 100%;
+  position: relative;
+}
+
+.sekcija2 .desno .content {
+  position: relative;
+  top: 30vh;
+  left: 50px;
+}
+
+.sekcija2 .desno .content h1 {
+  font-size: 80px;
+  color: var(--color-4);
+  border-bottom: 5px solid var(--color-4);
+  width: fit-content;
+  padding-right: 30px;
+  margin-bottom: 20px;
+}
+
+.sekcija2 .desno .content p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.sekcija2 .recenica {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .landing-sekcija {
+    height: 50vh;
+  }
+
+  .landing-sekcija h1 {
+    margin-left: 0;
+    font-size: 50px;
+    margin: 0 auto;
+  }
+
+  .sekcija2 {
+    height: auto;
+    flex-direction: column-reverse;
+  }
+
+  .sekcija2 .desno .content {
+    top: 0;
+    left: 0;
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .sekcija2 .desno .content h1 {
+    font-size: 40px;
+  }
+
+  .sekcija2 .levo {
+    height: 300px;
+  }
+}
